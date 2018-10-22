@@ -11,12 +11,14 @@ namespace EsercizioGit
         static void Main(string[] args)
         {
             int[] Vettore= { 1, 5, 2, 7, 20, 34, 56, 8, 30, 41 };
+            Array.Sort(Vettore);
             int ValoreMassimo = Vettore.Max();
             int IndexMassimo = Vettore.ToList().IndexOf(ValoreMassimo);
             int ValoreMinimo = Vettore.Min();
             int IndexMinimo = Vettore.ToList().IndexOf(ValoreMinimo);
             Console.WriteLine("Il valore massimo è " + ValoreMassimo + " e si trova nella posizione " + IndexMassimo);
             Console.WriteLine("Il valore minimo è " + ValoreMinimo + " e si trova nella posizione " + IndexMinimo);
+            foreach (int i in Vettore) Console.Write(i + " ");
             Console.ReadKey();
         }
     }
