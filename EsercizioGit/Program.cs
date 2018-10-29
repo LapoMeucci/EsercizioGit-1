@@ -10,7 +10,19 @@ namespace EsercizioGit
     {
         static void Main(string[] args)
         {
-            int[] Vettore= { 1, 5, 2, 7, 20, 34, 56, 8, 30, 41 };
+            Random rnd = new Random();
+            int Casella1 = rnd.Next(101);
+            int Casella2 = rnd.Next(101);
+            int Casella3 = rnd.Next(101);
+            int Casella4 = rnd.Next(101);
+            int Casella5 = rnd.Next(101);
+            int Casella6 = rnd.Next(101);
+            int Casella7 = rnd.Next(101);
+            int Casella8 = rnd.Next(101);
+            int Casella9 = rnd.Next(101);
+            int Casella10 = rnd.Next(101);
+
+            int[] Vettore= { Casella1, Casella2, Casella3, Casella4, Casella5, Casella6, Casella7, Casella8, Casella9, Casella10 };
             Array.Sort(Vettore);
             int ValoreMassimo = Vettore.Max();
             int IndexMassimo = Vettore.ToList().IndexOf(ValoreMassimo);
